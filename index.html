@@ -3,31 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <nav class="navegacao">
+      <ul class="menu">
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contato" class="menu-link">Contato</a></li>
       </ul>
     </nav>
 
-    <main id="cabecalho">
-      <div>
-        <img src="./assets/img/WhatsApp Image 2025-05-31 at 11.11.11.jpeg" alt="Minha foto de capa" />
+    <main id="cabecalho" class="cabecalho">     
+        <img src="./assets/img/WhatsApp Image 2025-05-31 at 11.11.11.jpeg" alt="foto do André" class="foto-perfil"/>
         <h1>André O. Marçal</h1>
-        <p>Desenvolvedor front End</p>
-      </div>
+        <p class="cabecalho-sub-titulo">Desenvolvedor front End</p>
     </main>
 
     <section id="sobre" class="sobre">
       <h2 class="sobre-titulo">Sobre Mim</h2>
       <div class="sobre-caixa">
-        <p class="sobre-texto">
+        <p class="sobre-paragrafo">
           Atualmente em transição de carreira para Análise e Desenvolvimento de
           Sistemas, sou um desenvolvedor apaixonado por Frontend. Crio
           interfaces impactantes e intuitivas com HTML, CSS, JavaScript,
