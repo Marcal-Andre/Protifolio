@@ -125,15 +125,34 @@ h1 {
 }
 
 .projetos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
  
 }
+
+.projetos-cards:hover {
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-10px) scale(1.03);
+
+}
+
 .projetos-caixa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projetos-cards {
-
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .projetos-imagem {
@@ -143,9 +162,17 @@ h1 {
 }
 
 .info-projeto {
+  margin-bottom: 5px;
+
+}
+
+.caixa-texto-projetos {
+  padding: 1.25rem;
 
 }
 
 .paragrafo-projetos {
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
 
 }
