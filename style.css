@@ -167,3 +167,68 @@ h1 {
   color: rgba(226, 232, 240, 0.8);
   line-height: 1.25rem;
 }
+
+.contatos {
+  padding: 6rem 2rem;
+
+}
+ 
+.contatos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+
+.formulario-contatos {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid var(--vidro);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  border-radius: 16px;
+}
+
+.formulario-contatos:hover {
+ box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-5px) scale(1.03);
+}
+
+ .campo-form {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--vidro);
+  border-radius: 8px;
+  color: var(--claro);
+  outline: none;
+}
+
+.campo-form:focus {
+  border-color: var(--primaria);
+  box-shadow: 0 0 5px var(--primaria);
+}
+
+ .grupo-form {
+  margin-bottom: 1.5rem;
+  
+
+
+ }
+ 
+ 
+ 
+
+
+
+.contatos-botao {
+  
+}
+
+.contatos-botao:hover {
+  
+  cursor: pointer;
+}
+
