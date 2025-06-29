@@ -7,7 +7,6 @@
     <title>Portfólio</title>
   </head>
   <body>
-
     <div class="particulas"></div>
 
     <nav class="navegacao">
@@ -50,15 +49,20 @@
 
       <div class="projetos-caixa">
         <div class="projetos-cards">
-          <img src="./img/Home Desing.png" alt="Projeto 1" / style="width: 400px; height: 200px;"/>
+          <img src="./img/Home Desing.png" alt="Projeto 1" / style="width:
+          400px; height: 200px;"/>
           <div class="caixa-texto-projetos">
             <h3 class="info-projeto">Home Design</h3>
-            <p class="paragrafo-projetos">Descrição do projeto 1.</p>
+            <p class="paragrafo-projetos">
+              Site para Design de interiores. <br />
+              <b>Em desenvolvimento</b>
+            </p>
           </div>
         </div>
 
         <div class="projetos-cards">
-          <img src="./img/Translatur - Viagens & Turismo (2).png" alt="Projeto 2"/ style="width: 380px; height: 200px;"/>
+          <img src="./img/Translatur - Viagens & Turismo (2).png" alt="Projeto
+          2"/ style="width: 380px; height: 200px;"/>
           <div class="caixa-texto-projetos">
             <h3 class="info-projeto">Projeto 2</h3>
             <p class="paragrafo-projetos">Descrição do projeto 2.</p>
@@ -77,7 +81,11 @@
 
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form class="formulario-contatos" id="formulario" onsubmit="enviarWhats(event)">
+      <form
+        class="formulario-contatos"
+        id="formulario"
+        onsubmit="enviarWhats(event)"
+      >
         <div class="grupo-form">
           <input type="text" placeholder="Nome" class="campo-form" id="nome" />
         </div>
@@ -85,7 +93,9 @@
         <div class="grupo-form">
           <textarea
             class="campo-form"
-            placeholder="Digite sua Menssagem" rows ="6" id="mensagem"
+            placeholder="Digite sua Menssagem"
+            rows="6"
+            id="mensagem"
           ></textarea>
         </div>
 
@@ -94,22 +104,21 @@
     </section>
 
     <script>
-    function enviarWhats(event) {
-      event.preventDefault(); // Impede o envio do formulário padrão
+      function enviarWhats(event) {
+        event.preventDefault(); // Impede o envio do formulário padrão
 
-      // Obtém os valores dos campos do formulário
-      const nome = document.getElementById("nome");
-      const mensagem = document.getElementById("mensagem");
-      const telefone = "5585996485562"; // Substitua pelo seu número de telefone
+        // Obtém os valores dos campos do formulário
+        const nome = document.getElementById("nome");
+        const mensagem = document.getElementById("mensagem");
+        const telefone = "5585996485562"; // Substitua pelo seu número de telefone
 
-      const texto = `Olá! meu nome é ${nome}, ${mensagem}`
-      const msgFormatada = encodeURIComponent(texto);
+        const texto = `Olá! meu nome é ${nome}, ${mensagem}`;
+        const msgFormatada = encodeURIComponent(texto);
 
-      const url = `https://wa.me/${5585996485562}?text=${msgFormatada}`;
+        const url = `https://wa.me/${5585996485562}?text=${msgFormatada}`;
 
-      window.open(url, "_blank");
-    }
+        window.open(url, "_blank");
+      }
     </script>
-
   </body>
 </html>
